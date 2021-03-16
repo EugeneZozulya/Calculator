@@ -1,0 +1,10 @@
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\bin\Debug\MyCulculator.exe.config
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\bin\Debug\MyCulculator.exe
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\bin\Debug\MyCulculator.pdb
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.csprojAssemblyReference.cache
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.Form1.resources
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.Properties.Resources.resources
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.csproj.GenerateResource.cache
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.csproj.CoreCompileInputs.cache
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.exe
+E:\Courses\ТП\Лаборатоная работа №1\MyCulculator\MyCulculator\obj\Debug\MyCulculator.pdb
