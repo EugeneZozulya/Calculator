@@ -33,10 +33,4 @@ pipeline {
             }        
         }
     }
-    post {
-        always {
-            archiveArtifacts artifacts: '**/*.msix', followSymlinks: false
-            junit "TestResults/1.0.0.${env.BUILD_NUMBER}/results.xml"
-        }
-    }
  }
