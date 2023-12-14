@@ -18,6 +18,18 @@ namespace CalculatorTest
         }
 
         [TestMethod]
+        public void Add_Test_2()
+        {
+            var a = 44;
+            var b = 44;
+
+            var expectedResult = 88;
+            var actualResult = math.Add(a, b);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
         public void Sub_Test()
         {
             var a = 34;
