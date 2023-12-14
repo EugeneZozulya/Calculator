@@ -13,22 +13,23 @@ pipeline {
         }
         stage('Restore packages') {
             steps {
-                bat "dotnet restore ${workspace}\\Calculator\\Calculator.sln"
+                bat "dotnet restore ${workspace}\\Calculator_main\\Calculator.sln"
             }
         }      
         stage('Clean') {
             steps {
-                bat "dotnet clean ${workspace}\\Calculator\\Calculator.sln --configuration Release"
+                bat "dotnet clean ${workspace}\\Calculator_main\\Calculator.sln --configuration Release"
             }
         }
         stage('Build') {
             steps {
-            bat "dotnet build ${workspace}\\Calculator\\Calculator.sln --configuration Release"
+            bat "dotnet build ${workspace}\\Calculator_main\\Calculator.sln --configuration Release"
             }
         }
         stage('Running unit tests') {
             steps {
-                bat "dotnet test ${workspace}/Calculator/CalculatorTest/CalculatorTest.csproj "         
+                bat "dotnet add ${workspace}/Calculator_main/CalculatorTest/CalculatorTest.csproj package JUnitTestLogger --version 1.1.0"
+                bat "dotnet test ${workspace}/Calculator_main/CalculatorTest/CalculatorTest.csproj --logger \"junit;LogFilePath=\"${WORKSPACE}\"/TestResults/1.0.0.\"${env.BUILD_NUMBER}\"/results.xml\" --configuration release --collect \"Code coverage\""         
             }        
         }
     }
