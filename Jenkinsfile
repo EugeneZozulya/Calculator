@@ -8,7 +8,7 @@ pipeline {
         } 
         stage ('Git Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'a19259f1-fbaa-437c-b905-f8d3e48bc20a', url: 'https://github.com/EugeneZozulya/Calculator.git'
+                git branch: 'main', credentialsId: '16a84b04-d65d-4959-8667-389a2c3e3893', url: 'https://github.com/EugeneZozulya/Calculator.git'
             }
         }
         stage('Restore packages') {
