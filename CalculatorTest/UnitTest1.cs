@@ -42,6 +42,19 @@ namespace CalculatorTest
         }
 
         [TestMethod]
+        public void Sub_Test_2()
+        {
+            var a = 64;
+            var b = 44;
+
+            var expectedResult = 20;
+            var actualResult = math.Sub(a, b);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
+        [TestMethod]
         public void Mul_Test()
         {
             var a = 10;
